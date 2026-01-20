@@ -1,0 +1,21 @@
+name: Manual build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/10 * * * *'
+  
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: log name
+        run: |
+
+          current_date_time=$(date)
+          echo "current date and time: $current_date_time" 
+        
+
+      
