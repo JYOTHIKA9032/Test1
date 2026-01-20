@@ -1,0 +1,14 @@
+name: Manual build
+
+on:
+  workflow_dispatch:
+  
+
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Greetings
+        run:  echo "hello, world"!
