@@ -11,5 +11,5 @@ jobs:
 
     steps:
       - name: Greetings
-        run: Echo hello world
+        run:  echo "hello, world"!
 
