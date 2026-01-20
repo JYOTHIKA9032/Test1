@@ -7,6 +7,11 @@ on:
         description: 'Name'
         type: string
         default: 'jyothika'
+
+      age:
+        description: 'Age'
+        type: number
+        required: true
   
 
 
@@ -15,5 +20,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Greetings
+      - name: name
         run:  echo "${{ inputs.name }}"
+
+      - name: age
+        run:  echo "${{ inputs.age }}"
