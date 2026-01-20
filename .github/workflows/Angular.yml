@@ -2,8 +2,7 @@ name: build Angular APP
 
 on:
   push:
-    branches: [main]
-
+    branches: [Feature_Branch]
 
 jobs:
   build_angular:
